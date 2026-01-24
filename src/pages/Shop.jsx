@@ -62,9 +62,9 @@ const Shop = () => {
 
         {/* Product Grid */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProducts.map((product) => (
-            <div key={product.id} className="group bg-white/5 rounded-lg overflow-hidden border border-white/5 hover:border-hiqz-gold/30 transition-all duration-300">
-              <Link to={`/product/${product.id}`}>
+        {filteredProducts.map((product) => (
+          <div key={product.id} className="group bg-white/5 rounded-lg overflow-hidden border border-white/5 hover:border-hiqz-gold/30 transition-all duration-300">
+            <Link to={`/product/${product.id}`}>
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <img 
                     src={product.image} 
@@ -86,17 +86,22 @@ const Shop = () => {
                     </div>
                   )}
                 </div>
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <p className="text-xs text-hiqz-gold uppercase tracking-wider font-semibold">{product.category}</p>
-                  </div>
-                  <h3 className="text-lg text-white font-serif font-medium mb-2 group-hover:text-hiqz-gold transition-colors">{product.name}</h3>
-                  <p className="text-white font-bold tracking-wide">₦{product.price.toLocaleString()}</p>
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-2">
+                  <p className="text-xs text-hiqz-gold uppercase tracking-wider font-semibold">{product.category}</p>
                 </div>
-              </Link>
-            </div>
-          ))}
-        </div>
+                <h3 className="text-lg text-white font-serif font-medium mb-2 group-hover:text-hiqz-gold transition-colors">{product.name}</h3>
+                <div className="flex items-center justify-between">
+                  <p className="text-white font-bold tracking-wide">₦{product.price.toLocaleString()}</p>
+                  <span className="text-xs uppercase tracking-[0.3em] text-hiqz-gold border border-hiqz-gold/50 px-3 py-1 rounded-full">
+                    View
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
 
         {/* Empty State */}
         {filteredProducts.length === 0 && (

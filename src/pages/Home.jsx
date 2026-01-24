@@ -195,7 +195,12 @@ const Home = () => {
                   <p className="text-xs uppercase tracking-[0.3em] text-hiqz-gold mb-2">{product.category}</p>
                   <h3 className="font-serif text-lg text-white mb-2">{product.name}</h3>
                   <p className="text-sm text-gray-400 line-clamp-2 mb-4">{product.description}</p>
-                  <span className="text-white font-semibold">₦{product.price.toLocaleString()}</span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-white font-semibold">₦{product.price.toLocaleString()}</span>
+                    <span className="text-xs uppercase tracking-[0.3em] text-hiqz-gold border border-hiqz-gold/50 px-3 py-1 rounded-full">
+                      View
+                    </span>
+                  </div>
                 </div>
               </Link>
             ))}

@@ -231,7 +231,12 @@ Is it available for delivery?`;
                   <div className="p-5">
                     <p className="text-xs uppercase tracking-[0.3em] text-hiqz-gold mb-2">{item.category}</p>
                     <h3 className="font-serif text-lg text-white mb-2">{item.name}</h3>
-                    <span className="text-white font-semibold">₦{item.price.toLocaleString()}</span>
+                    <div className="flex items-center justify-between">
+                      <span className="text-white font-semibold">₦{item.price.toLocaleString()}</span>
+                      <span className="text-xs uppercase tracking-[0.3em] text-hiqz-gold border border-hiqz-gold/50 px-3 py-1 rounded-full">
+                        View
+                      </span>
+                    </div>
                   </div>
                 </Link>
               ))}
