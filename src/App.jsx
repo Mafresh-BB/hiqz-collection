@@ -1,12 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import ProductDetail from './pages/ProductDetail';
+import HowToOrder from './pages/HowToOrder';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="bg-hiqz-dark min-h-screen text-white font-sans selection:bg-hiqz-gold selection:text-black">
+    <div className="bg-hiqz-dark min-h-screen text-hiqz-light font-sans selection:bg-hiqz-gold selection:text-black">
       
       {/* Navigation */}
       <Navbar /> 
@@ -16,11 +19,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/product/:id" element={<ProductDetail />} />
-        
-        {/* Placeholder for About page to prevent errors if clicked */}
-        <Route path="/about" element={<div className="pt-24 text-center">Our Story - Coming Soon</div>} />
+        <Route path="/how-to-order" element={<HowToOrder />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
+      <Footer />
     </div>
   )
 }

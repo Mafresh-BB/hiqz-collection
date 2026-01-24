@@ -8,15 +8,16 @@ export default {
     extend: {
       colors: {
         hiqz: {
-          purple: '#3b0764',     // Deep Royal Purple (Brand Primary)
+          purple: '#2b0a45',     // Deep Royal Purple (Brand Primary)
           gold: '#C5A059',       // Muted Luxury Gold (Brand Accent)
-          dark: '#0f0f0f',       // Charcoal Black (Backgrounds)
-          light: '#f9fafb',      // Off-white (Text)
+          dark: '#0b0b0e',       // Charcoal Black (Backgrounds)
+          light: '#f5f1e8',      // Warm Off-white (Text)
         }
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'], // Luxury Headers
-        sans: ['"Montserrat"', 'sans-serif'],   // Clean Body Text
+        display: ['"Cinzel"', 'serif'],           // Hero & Headlines
+        serif: ['"Cormorant Garamond"', 'serif'], // Elegant Subheads
+        sans: ['"Manrope"', 'sans-serif'],        // Clean Body Text
       }
     },
   },
