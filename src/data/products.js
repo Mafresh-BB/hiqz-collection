@@ -13,6 +13,7 @@ export const products = [
       "A bold, halal-luxury statement chain crafted from 925 sterling silver and set with VVS1-grade moissanite for undeniable brilliance.",
     isBestSeller: true,
     isNew: false,
+    stoneGrade: "VVS1 Moissanite",
     material: "925 Sterling Silver • Moissanite (VVS1)",
     packaging: "Premium box + authenticity certificate (full package).",
     sku: "HC-925-MV01",
@@ -115,12 +116,12 @@ export const products = [
   },
   {
     id: 703,
-    name: "Sculpted Gold Bangles",
+    name: "Chunky Bangle - Sculpted Gold",
     category: "Rings",
     price: 3000,
-    image: "/images/products/sculpted-gold-bangles-1.jpeg",
+    image: "/images/products/chunky-bangle-sculpted-1.jpeg",
     images: [
-      "/images/products/sculpted-gold-bangles-1.jpeg",
+      "/images/products/chunky-bangle-sculpted-1.jpeg",
     ],
     description:
       "Mirror-finish sculpted bangles designed to elevate everyday looks with a bold gold statement.",
@@ -137,22 +138,22 @@ export const products = [
   },
   {
     id: 704,
-    name: "Fluid Gold Statement Ring",
+    name: "Chunky Bangle - Fluid Gold",
     category: "Rings",
     price: 5000,
-    image: "/images/products/fluid-gold-ring-1.jpeg",
+    image: "/images/products/chunky-bangle-fluid-1.jpeg",
     images: [
-      "/images/products/fluid-gold-ring-1.jpeg",
+      "/images/products/chunky-bangle-fluid-1.jpeg",
     ],
     description:
-      "A sculptural gold-tone ring designed to wrap the hand with a bold, modern silhouette.",
+      "A sculptural gold-tone bangle designed to wrap the wrist with a bold, modern silhouette.",
     isBestSeller: false,
     isNew: true,
     material: "Alloy • Gold-tone finish",
     packaging: "Standard pouch included.",
     sku: "HC-FR-704",
     highlights: [
-      "Bold open-form design",
+      "Bold open-form bangle",
       "Mirror-polish gold finish",
       "Statement-ready styling",
     ],

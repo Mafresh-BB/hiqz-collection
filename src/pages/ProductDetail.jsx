@@ -155,10 +155,12 @@ Is it available for delivery?`;
                   <Check size={16} className="text-hiqz-gold mr-3" />
                   <span>Material: <span className="text-white">{product.material || "Premium Quality"}</span></span>
                 </div>
-                <div className="flex items-center text-gray-400 text-sm">
-                  <Sparkles size={16} className="text-hiqz-gold mr-3" />
-                  <span>Stone Grade: <span className="text-white">VVS1 Moissanite</span></span>
-                </div>
+                {product.stoneGrade && (
+                  <div className="flex items-center text-gray-400 text-sm">
+                    <Sparkles size={16} className="text-hiqz-gold mr-3" />
+                    <span>Stone Grade: <span className="text-white">{product.stoneGrade}</span></span>
+                  </div>
+                )}
                 <div className="flex items-center text-gray-400 text-sm">
                   <PackageCheck size={16} className="text-hiqz-gold mr-3" />
                   <span>{product.packaging}</span>
